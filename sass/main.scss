@@ -50,9 +50,10 @@ body {
 	}
 }
 
+
 .home {
 	.home__container {
-		background-image: url(../img/myphoto700x667d.png);
+		background-image: url("../img/myphoto700x667d.png");
 		background-size: auto 50vh;
 		background-position: 99% bottom;
 
@@ -66,6 +67,7 @@ body {
 		.container__text {
 			font-weight: bold;
 			text-shadow: 2px 2px 0 black;
+			
 
 			&--h2 {
 				text-transform: uppercase;
@@ -90,6 +92,7 @@ body {
 
 .projects {
 	.container {
+		
 		height: calc(100vh - 80px);
 		display: flex;
 		flex-direction: column;
