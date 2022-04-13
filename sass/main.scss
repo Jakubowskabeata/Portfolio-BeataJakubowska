@@ -57,6 +57,7 @@ body {
 		.home__container__text {
 			display: flex;
 			flex-direction: column;
+			// padding: 5vh 0 0 0;
 			.home__text {
 				font-weight: bold;
 				text-shadow: 2px 2px 0 black;
@@ -177,13 +178,13 @@ span {
 	margin: 20px auto;
 
 	.section-title{
-		padding: 30px;
+		padding: 15px;
 	}
 	.aboutme__container {
 		display: grid;
 		grid-template-columns: repeat(1, minmax(auto, 500px));
-		grid-template-rows:  repeat(6, auto);;
-		gap: 15px;
+		grid-template-rows:  repeat(6, auto);
+		gap: 25px;
 	
 		.card {
 			background-color: $dark;
@@ -237,7 +238,6 @@ span {
 		}
 	}
 }
-
 
 @media(min-width: 576px){
 	.aboutme {

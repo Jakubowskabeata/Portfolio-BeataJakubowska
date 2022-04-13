@@ -190,7 +190,7 @@ span {
 }
 
 .aboutme .section-title {
-  padding: 30px;
+  padding: 15px;
 }
 
 .aboutme .aboutme__container {
@@ -200,7 +200,7 @@ span {
       grid-template-columns: repeat(1, minmax(auto, 500px));
   -ms-grid-rows: (auto)[6];
       grid-template-rows: repeat(6, auto);
-  gap: 15px;
+  gap: 25px;
 }
 
 .aboutme .aboutme__container .card {
