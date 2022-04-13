@@ -117,7 +117,6 @@ body {
 			margin: 0 auto;
 			.col {
 				.card {
-				
 					height: 100%;
 					background-color: $dark;
 					border-radius: 10px;
@@ -155,16 +154,6 @@ body {
 								margin-bottom: 15px;
 								font-size: 1rem;
 							}
-							span {
-								display: inline-block;
-								text-transform: uppercase;
-								border: 1px solid $gold;
-								border-radius: 8px;
-								margin: 3px;
-								padding: 3px 6px;
-								color: white;
-								font-size: 1rem;
-							}
 						}
 					}
 				}
@@ -173,14 +162,117 @@ body {
 	}
 }
 
+span {
+	display: inline-block;
+	text-transform: uppercase;
+	border: 1px solid $gold;
+	border-radius: 8px;
+	margin: 3px;
+	padding: 3px 6px;
+	color: white;
+	font-size: 1rem;
+}
+
+.aboutme {
+	margin: 20px auto;
+
+	.section-title{
+		padding: 30px;
+	}
+	.aboutme__container {
+		display: grid;
+		grid-template-columns: repeat(1, minmax(auto, 500px));
+		grid-template-rows:  repeat(6, auto);;
+		gap: 15px;
+	
+		.card {
+			background-color: $dark;
+			color: white;
+			border-radius: 50px;
+			padding: 10px;
+			.card-title {
+				text-transform: uppercase;
+				color: $gold;
+				padding-bottom:20px
+			}
+			.icon-hobby{
+				font-size: 30px;
+				padding: 15px 5px;
+				color: #333;
+			}
+		}
+		.aboutme__container__description {
+			grid-column: 1/2;
+			grid-row: 1/2;
+		}
+		.aboutme__container__skills {
+			grid-column: 1/2;
+
+			grid-row: 2/3;
+		}
+		.aboutme__container__hobby {
+			grid-column: 1/2;
+			grid-row: 4/5;
+			.list-group-item {
+				background-color: $dark;
+				color: white;
+				border-right: none;
+				border-left: none;
+				padding: 3px;
+			}
+		}
+		.aboutme__container__language {
+			grid-column: 1/2;
+			grid-row: 3/4;
+		}
+		.aboutme__container__logo {
+			grid-column: 1/2;
+			grid-row: 5/6;
+			padding: 40px;
+			align-self: center;
+		}
+			.aboutme__container__quote {
+			grid-column: 1/2;
+			grid-row: 6/7;
+		}
+	}
+}
 
 
-// .aboutme{
-
-
-// }
-
-
+@media(min-width: 576px){
+	.aboutme {
+	.aboutme__container {
+		grid-template-columns: repeat(2, minmax(auto, 500px));
+		grid-template-rows:  repeat(3, auto);;
+		grid-auto-flow: row;
+	
+		.aboutme__container__description {
+			grid-column: 1/2;
+			grid-row: 1/3;
+		}
+		.aboutme__container__skills {
+			grid-column: 2/3;
+			grid-row: 1/2;
+		}
+		.aboutme__container__hobby {
+			grid-column: 1/2;
+			grid-row: 3/5;
+		}
+		.aboutme__container__language {
+			grid-column: 2/2;
+			grid-row: 2/3;
+		}
+		.aboutme__container__logo {
+			grid-column: 2/2;
+			grid-row: 3/4;
+		}
+			.aboutme__container__quote {
+			grid-column: 2/2;
+			grid-row: 4/5;
+		}
+	}
+}
+}
 @media (min-width: 992px) {
 	.home {
 		.home__container {
@@ -199,4 +291,41 @@ body {
 			}
 		}
 	}
+
+
+ .aboutme {
+	.aboutme__container {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr 0.5fr 0.5fr;
+	
+		.aboutme__container__description {
+			grid-column: 1/2;
+			grid-row: 1/4;
+		}
+		.aboutme__container__skills {
+			grid-column: 2/3;
+
+			grid-row: 1/2;
+		}
+		.aboutme__container__hobby {
+			grid-column: 3/4;
+			grid-row: 1/2;
+		
+		}
+		.aboutme__container__language {
+			grid-column: 2/3;
+			grid-row: 3/4;
+		}
+		.aboutme__container__logo {
+			grid-column: 3/4;
+			grid-row: 2/4;
+		
+		}
+			.aboutme__container__quote {
+			grid-column: 2/3;
+			grid-row: 2/3;
+		}
+	}
+}
+
 }
