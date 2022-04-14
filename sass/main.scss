@@ -238,6 +238,16 @@ span {
 		}
 	}
 }
+.contact{
+	margin-top: 90px;
+	.card{
+
+		background-color: $light-dark;
+		color:$light-gold;
+		border:none;
+
+	}
+}
 
 @media(min-width: 576px){
 	.aboutme {

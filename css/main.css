@@ -288,6 +288,16 @@ span {
   grid-row: 6/7;
 }
 
+.contact {
+  margin-top: 90px;
+}
+
+.contact .card {
+  background-color: #232323;
+  color: #fdbe84;
+  border: none;
+}
+
 @media (min-width: 576px) {
   .aboutme .aboutme__container {
     -ms-grid-columns: (minmax(auto, 500px))[2];
