@@ -45,6 +45,23 @@ body {
   padding-bottom: 20px;
 }
 
+.section-title {
+  text-transform: uppercase;
+  color: #fdbe84;
+  text-shadow: 2px 2px 0 black;
+}
+
+span {
+  display: inline-block;
+  text-transform: uppercase;
+  border: 1px solid #e09145;
+  border-radius: 8px;
+  margin: 3px;
+  padding: 3px 6px;
+  color: white;
+  font-size: 1rem;
+}
+
 .home .home__container {
   color: #fdbe84;
   height: calc(100vh - 70px);
@@ -127,14 +144,7 @@ body {
   border-bottom-right-radius: 50%;
 }
 
-.section-title {
-  text-transform: uppercase;
-  color: #fdbe84;
-  text-shadow: 2px 2px 0 black;
-}
-
 .projects .container {
-  height: calc(100vh - 70px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,17 +203,6 @@ body {
   padding: 10px 5px;
   border-radius: 10px;
   margin-bottom: 15px;
-  font-size: 1rem;
-}
-
-span {
-  display: inline-block;
-  text-transform: uppercase;
-  border: 1px solid #e09145;
-  border-radius: 8px;
-  margin: 3px;
-  padding: 3px 6px;
-  color: white;
   font-size: 1rem;
 }
 
