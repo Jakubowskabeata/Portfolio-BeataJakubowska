@@ -98,13 +98,33 @@ body {
 }
 
 .home .home__container .home__container__img {
+  position: relative;
+  border-left: 15px double #e09145;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-box-shadow: inset 6px 5px 4px 0px #ddb878, -4px 1px 3px 0px #303030;
+          box-shadow: inset 6px 5px 4px 0px #ddb878, -4px 1px 3px 0px #303030;
 }
 
 .home .home__container .home__container__img .home__img {
   width: 100%;
   max-height: 60vh;
+}
+
+.home .home__container .home__container__img::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: -40%;
+  width: 70%;
+  height: 20%;
+  z-index: 1;
+  border-right: 10px double #e09145;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .section-title {
@@ -131,7 +151,9 @@ body {
 
 .projects .container .projects__container .col .card {
   height: 100%;
-  background-color: #171717;
+  background-color: #232323;
+  -webkit-box-shadow: 5px 4px 4px 0px black, inset 4px 4px 3px 0px #303030;
+          box-shadow: 5px 4px 4px 0px black, inset 4px 4px 3px 0px #303030;
   border-radius: 10px;
   color: white;
   padding: 10px;
@@ -157,7 +179,7 @@ body {
   display: inline-block;
   text-transform: uppercase;
   color: #e09145;
-  background: #232323;
+  background: #171717;
   border: black 2px double;
   border-radius: 10px;
   font-weight: 900;
@@ -204,7 +226,9 @@ span {
 }
 
 .aboutme .aboutme__container .card {
-  background-color: #171717;
+  background-color: #232323;
+  -webkit-box-shadow: 5px 4px 4px 0px black, inset 4px 4px 3px 0px #303030;
+          box-shadow: 5px 4px 4px 0px black, inset 4px 4px 3px 0px #303030;
   color: white;
   border-radius: 50px;
   padding: 10px;
@@ -250,7 +274,7 @@ span {
 }
 
 .aboutme .aboutme__container .aboutme__container__hobby .list-group-item {
-  background-color: #171717;
+  background-color: #232323;
   color: white;
   border-right: none;
   border-left: none;
@@ -296,6 +320,9 @@ span {
   background-color: #232323;
   color: #fdbe84;
   border: none;
+  -webkit-box-shadow: 5px 4px 4px 0px black, inset 4px 4px 3px 0px #303030;
+          box-shadow: 5px 4px 4px 0px black, inset 4px 4px 3px 0px #303030;
+  border-radius: 10px;
 }
 
 @media (min-width: 576px) {

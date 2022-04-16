@@ -1,7 +1,13 @@
-$dark:#171717;
-$light-dark:rgb(35, 35, 35);
-$gold:#e09145;
-$light-gold:#fdbe84;
-$background-gradient: linear-gradient(90deg, $light-dark 0%, $gold 22%,$light-gold 50%, $gold 82%, $light-dark 100%);
-
-
+$dark: #171717;
+$light-dark: rgb(35, 35, 35);
+$gold: #e09145;
+$light-gold: #fdbe84;
+$background-gradient: linear-gradient(
+	90deg,
+	$light-dark 0%,
+	$gold 22%,
+	$light-gold 50%,
+	$gold 82%,
+	$light-dark 100%
+);
+$shadow:5px 4px 4px 0px black, inset 4px 4px 3px 0px #303030;
